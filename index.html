@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="ja">
+
+<head>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <script src="https://cdn.jsdelivr.net/npm/@tensorflow/tfjs@1.5.1"></script>
+  <script type="text/javascript" src="main.js"></script>
+  <link rel="stylesheet" type="text/css" href="kinoko.css">
+</head>
+
+<body>
+
+
+  <div>
+    <canvas id="cvs1" width="150" height="150"></canvas>
+  </div>
+  <input type="button" id="btn1" value="判定" onclick="predict();">
+  <input type="file" id="selfile">
+  <div>
+    <canvas id="cvs2" width="150" height="150"></canvas>
+    <ul id="result">
+    </ul>
+  </div>
+  <div>
+    <input type="button" id="predictAllBtn" value="一括判定" onclick="predictAll();">
+    <input type="file" id="selfilemulti" multiple>
+    <div>
+      <table id="resultTable" border="1">
+
+      </table>
+    </div>
+  </div>
+
+</body>
+
+</html>
